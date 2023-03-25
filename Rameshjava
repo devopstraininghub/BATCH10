@@ -1,0 +1,6 @@
+BindingContext bctx = BindingContext.getCurrent();
+          BindingContainer bc = bctx.getCurrentBindingsEntry();
+          DCIteratorBinding iter = (DCIteratorBinding) bc.get                  ("EmployeesView1Iterator");
+          ViewObject vo = iter.getViewObject();
+          Row r = vo.getCurrentRow();
+          r.getAttribute("EmployeeId")
