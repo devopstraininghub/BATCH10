@@ -1,0 +1,4 @@
+FacesContext ctx = FacesContext.getCurrentInstance();  
+ExpressionFactory ef = ctx.getApplication().getExpressionFactory();  
+ValueExpression ve = ef.createValueExpression(ctx.getELContext(), 
+                "#{bindings.testIter.currentRow.dataProvider}", 

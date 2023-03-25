@@ -1,0 +1,8 @@
+public String abbu(){
+        DCBindingContainer bc = 
+                (DCBindingContainer)BindingContext.getCurrent().getCurrentBindingsEntry();       
+        AttributeBinding attr = (AttributeBinding)bc.getControlBinding("DepartmentId1");
+        Number selectCust = (Number)attr.getInputValue();     
+        System.out.println(selectCust);
+        return null;
+    }
