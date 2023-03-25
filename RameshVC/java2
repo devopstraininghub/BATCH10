@@ -1,4 +1,0 @@
-// refresh the iterator  
-bindings.refreshControl();  
-iterBind.executeQuery();  
-iterBind.refresh(DCIteratorBinding.RANGESIZE_UNLIMITED);  
