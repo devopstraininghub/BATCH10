@@ -1,0 +1,17 @@
+============= PHP Code to Download File =============
+
+<?php
+
+$file_url = 'URL';
+
+header('Content-Type: application/octet-stream');
+
+header("Content-Transfer-Encoding: Binary");
+
+header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\"");
+
+readfile($file_url);
+
+?>
+
+================= End ==============================
