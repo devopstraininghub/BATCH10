@@ -11,12 +11,20 @@
 
 ### Git create branch
 
-		`git branch <br.name>`
+	`git branch <br.name>`
 
-		`git checkout <br.name>`
+	`git checkout <br.name>`
 
 ### Git push branch
 
-		`git push origin <br.name>`
+	`git push origin <br.name>`
 
 
+### Git Create tag
+
+    `git tag <tag.name>`
+
+### Git push tag
+
+    `git push origin <tag.name>`
+    
