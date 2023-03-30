@@ -1,0 +1,17 @@
+public void searchFstname(String name){
+        ViewObjectImpl vo = this.getEmployeesView1();
+        ViewCriteria vc = vo.getViewCriteria("EmployeesViewCriteria");
+        vo.setNamedWhereClauseParam("FstnamesearchBind", name);
+        vo.applyViewCriteria(vc);
+        vo.executeQuery();
+        RowSetIterator rs = vo.createRowSetIterator(null);
+        while(rs.hasNext()){
+            Row r = rs.next();
+            Object ab = r.getAttribute("FirstName");
+            ProgrammaticVoImpl pvo = this.getProgrammaticVo1();
+            Row cR = pvo.createRow();
+            cR.setAttribute("Firstname", ab);
+            pvo.insertRow(cR);
+        }
+      
+    }
